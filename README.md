@@ -32,4 +32,4 @@
  - Invlaid = 'a', Null
 
 2. dict 형태로 전달하지 않은 Type invalid Case 추출
- - '[1, 'a', '3', 1]'
+ - [1, 'a', '3', 1]
