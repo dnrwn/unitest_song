@@ -18,6 +18,18 @@
   - coverage run -m pytest tests/
   - coverage run -m pytest -v -m "my_marker" tests/
 
-테스트 케이스
-1. dbrequirements
-2. server_requirements
+테스트 케이스 설계 규칙
+1. 페어와이즈 기법을 통해 Boundary Case 추출
+도구 : https://pairwise.yuuniworks.com/
+- Int type
+ - Valid = 1
+ - Invalid = 'a', Null
+- string type
+ - Valid = 1, '', '(Min lengh)', 'aaaaa(Max lengh)'
+ - Invalid = 'aaaaab(Max lengh + 1)', Null
+- BOOLEAN Type
+ - Valid = 1, 0, 5
+ - Invlaid = 'a', Null
+
+2. dict 형태로 전달하지 않은 Type invalid Case
+   - '[1, 'a', '3', 1]'
