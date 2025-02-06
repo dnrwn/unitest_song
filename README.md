@@ -18,3 +18,6 @@
   - coverage run -m pytest tests/
   - coverage run -m pytest -v -m "my_marker" tests/
 
+테스트 케이스
+1. dbrequirements
+2. server_requirements
