@@ -23,7 +23,7 @@
   - Mandatory일 경우 Null 값은 Invalid
   - Optional일 경우 Null 값은 Valid
 - https://pairwise.yuuniworks.com/
-1. 동등등 분할
+1. 동등 분할
 a. Int
   - Valid : 1
   - Invalid : 'a', Null
