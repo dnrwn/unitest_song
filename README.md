@@ -71,3 +71,9 @@ c. Boolean
 ## TC 관리
 - 단위 테스트 : unittest_song.git
 - 통합, 시스템 테스트 : testscript_song.git
+
+
+## TC Script 설계 현화ㅏㅇ
+- 단위 테스트 : 진행 중 (단위, 단위(route))
+- 통합 테스트 : 진행 불필요 (postman 변환 완료, excel read에서 TC 문서 변환하여 처리)
+- 시스템 테스트 : 미진행 (TC 설계 필요)
