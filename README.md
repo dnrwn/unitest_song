@@ -73,7 +73,11 @@ c. Boolean
 - 통합, 시스템 테스트 : testscript_song.git
 
 
-## TC Script 설계 현화ㅏㅇ
-- 단위 테스트 : 진행 중 (단위, 단위(route))
+## TC Script 설계 현황
+- 단위 테스트 : 진행 중 (단위 완료, 단위(route) 진행 중)
+  - pytest를 통해 Test Script 작성
+  - Valid Case의 경우 assert로 수행
+  - Invalid Case의 경우 with pytest.raises([error type]) 으로 수행
+  - 한 개의 pytest Case에 복수의 Case를 수행하고자 할 경우 @pytest.mark.parametrize() 활용
 - 통합 테스트 : 진행 불필요 (postman 변환 완료, excel read에서 TC 문서 변환하여 처리)
 - 시스템 테스트 : 미진행 (TC 설계 필요)
