@@ -72,9 +72,12 @@ c. Boolean
 - 단위 테스트 : unittest_song.git
 - 통합, 시스템 테스트 : testscript_song.git
 
+## 테스트 전략 변경
+- main.py, Query.py 를 단위테스트로 수행하려 했으나 main.py은 flask, db 모듈이 연동되는 기능이므로 단순 함수 실행으로 단위 테스트를 할 수 없음
+- 통합 테스트로 포괄 운영하는 것으로 전략 변경
 
 ## TC Script 설계 현황
-- 단위 테스트 : 진행 중 (단위 완료, 단위(route) 진행 중)
+- 단위 테스트 : 완료
   - pytest를 통해 Test Script 작성
   - Valid Case의 경우 assert로 수행
   - Invalid Case의 경우 with pytest.raises([error type]) 으로 수행
