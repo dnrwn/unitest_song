@@ -1,19 +1,17 @@
-import sys, os, logging
+import sys, os, logging, pytest
 from datetime import *
 
-import pytest
+# 다른 프로젝트에 있는 모듈을 가져오기 위한 code
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'restapi_song', 'server', 'db_f')))
+import Query
 
+# Test에 필요한 모듈 설정
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 date = datetime.now().strftime('%y-%m-%d %H:%M:%S')
-# 현재 파일의 경로를 기준으로 상위 디렉토리와 server 디렉토리 경로를 추가
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'restapi_song', 'server', 'db_f')))
 
-# 이제 db_f.query 모듈을 import 할 수 있음
-import Query
-
+# Query.py Test Case
 def test_DB_query_date_1():
-    # 테스트 코드 작성
     actual_result = Query.date()
     expected_result = date
     logger.info(actual_result)
