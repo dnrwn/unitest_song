@@ -33,6 +33,7 @@ b. String
 c. Boolean
   - Valid = True, False
   - Invlaid = 'a', Null
+
 2. 경계값 분석
 a. Int
   - valid : 1
