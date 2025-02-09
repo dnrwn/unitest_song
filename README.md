@@ -26,36 +26,33 @@
 
 1. 동등 분할
 
-a. Int
-  - Valid : 1
-  - Invalid : 'a', Null
+   a. Int
+     - Valid : 1
+     - Invalid : 'a', Null
+  
+   b. String
+     - Valid = 'a'
+     - Invalid = Null, 1
 
-
-b. String
-  - Valid = 'a'
-  - Invalid = Null, 1
-
-
-c. Boolean
-  - Valid = True, False
-  - Invlaid = 'a', Null
+   c. Boolean
+     - Valid = True, False
+     - Invlaid = 'a', Null
 
 2. 경계값 분석
 
-a. Int
-  - valid : 1
-
-
-b. String
-  - Valid : ''(Min lengh), 'aaaaa'(Max lengh)
-  - Invalid : 'aaaaab'(Max lengh + 1)
-
-
-c. Boolean
-  - Valid : 0, 1, 5
+   a. Int
+     - valid : 1
+   
+   b. String
+     - Valid : ''(Min lengh), 'aaaaa'(Max lengh)
+     - Invalid : 'aaaaab'(Max lengh + 1)
+  
+   c. Boolean
+     - Valid : 0, 1, 5
 
 3. dict 형태로 전달하지 않은 Type Case (invalid)
-  - list : [1, 'a', '3', 1]
+   - list : [1, 'a', '3', 1]
+
 
 4. 단위 (route 한정)
    - rule 고정, method에 대한 invalid case
