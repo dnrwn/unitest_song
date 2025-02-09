@@ -29,9 +29,13 @@
 a. Int
   - Valid : 1
   - Invalid : 'a', Null
+
+
 b. String
   - Valid = 'a'
   - Invalid = Null, 1
+
+
 c. Boolean
   - Valid = True, False
   - Invlaid = 'a', Null
@@ -40,9 +44,13 @@ c. Boolean
 
 a. Int
   - valid : 1
+
+
 b. String
   - Valid : ''(Min lengh), 'aaaaa'(Max lengh)
   - Invalid : 'aaaaab'(Max lengh + 1)
+
+
 c. Boolean
   - Valid : 0, 1, 5
 
