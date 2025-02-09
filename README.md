@@ -23,7 +23,9 @@
   - Mandatory일 경우 Null 값은 Invalid
   - Optional일 경우 Null 값은 Valid
 - https://pairwise.yuuniworks.com/
+
 1. 동등 분할
+
 a. Int
   - Valid : 1
   - Invalid : 'a', Null
@@ -35,6 +37,7 @@ c. Boolean
   - Invlaid = 'a', Null
 
 2. 경계값 분석
+
 a. Int
   - valid : 1
 b. String
