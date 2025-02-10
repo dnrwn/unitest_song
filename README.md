@@ -23,27 +23,36 @@
   - Mandatory일 경우 Null 값은 Invalid
   - Optional일 경우 Null 값은 Valid
 - https://pairwise.yuuniworks.com/
+
 1. 동등 분할
-a. Int
-  - Valid : 1
-  - Invalid : 'a', Null
-b. String
-  - Valid = 'a'
-  - Invalid = Null, 1
-c. Boolean
-  - Valid = True, False
-  - Invlaid = 'a', Null
+
+   a. Int
+     - Valid : 1
+     - Invalid : 'a', Null
+  
+   b. String
+     - Valid = 'a'
+     - Invalid = Null, 1
+
+   c. Boolean
+     - Valid = True, False
+     - Invlaid = 'a', Null
+
 2. 경계값 분석
-a. Int
-  - valid : 1
-b. String
-  - Valid : ''(Min lengh), 'aaaaa'(Max lengh)
-  - Invalid : 'aaaaab'(Max lengh + 1)
-c. Boolean
-  - Valid : 0, 1, 5
+
+   a. Int
+     - valid : 1
+   
+   b. String
+     - Valid : ''(Min lengh), 'aaaaa'(Max lengh)
+     - Invalid : 'aaaaab'(Max lengh + 1)
+  
+   c. Boolean
+     - Valid : 0, 1, 5
 
 3. dict 형태로 전달하지 않은 Type Case (invalid)
-  - list : [1, 'a', '3', 1]
+   - list : [1, 'a', '3', 1]
+
 
 4. 단위 (route 한정)
    - rule 고정, method에 대한 invalid case
@@ -72,9 +81,12 @@ c. Boolean
 - 단위 테스트 : unittest_song.git
 - 통합, 시스템 테스트 : testscript_song.git
 
+## 테스트 전략 변경
+- main.py, Query.py 를 단위테스트로 수행하려 했으나 main.py은 flask, db 모듈이 연동되는 기능이므로 단순 함수 실행으로 단위 테스트를 할 수 없음
+- 통합 테스트로 포괄 운영하는 것으로 전략 변경
 
 ## TC Script 설계 현황
-- 단위 테스트 : 진행 중 (단위 완료, 단위(route) 진행 중)
+- 단위 테스트 : 완료
   - pytest를 통해 Test Script 작성
   - Valid Case의 경우 assert로 수행
   - Invalid Case의 경우 with pytest.raises([error type]) 으로 수행
