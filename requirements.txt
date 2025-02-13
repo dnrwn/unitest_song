@@ -2,3 +2,4 @@ pytest==8.3.4
 pytest-html==4.1.1
 coverage==7.6.10
 pytest-html-reporter==0.2.9
+pytest-junit-xray-xml==0.2.0

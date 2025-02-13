@@ -2,7 +2,7 @@ import sys, os, logging, pytest
 from datetime import *
 
 # 다른 프로젝트에 있는 모듈을 가져오기 위한 code
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'restapi_song', 'server', 'db_f')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'server', 'db_f')))
 import Query
 
 # Test에 필요한 모듈 설정
